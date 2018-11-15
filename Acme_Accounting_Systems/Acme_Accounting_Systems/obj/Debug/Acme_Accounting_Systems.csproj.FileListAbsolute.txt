@@ -1,0 +1,7 @@
+C:\Users\Dani\Desktop\Tech-Academy-Basic-C-Sharp-Projects\Acme_Accounting_Systems\Acme_Accounting_Systems\bin\Debug\Acme_Accounting_Systems.exe.config
+C:\Users\Dani\Desktop\Tech-Academy-Basic-C-Sharp-Projects\Acme_Accounting_Systems\Acme_Accounting_Systems\bin\Debug\Acme_Accounting_Systems.exe
+C:\Users\Dani\Desktop\Tech-Academy-Basic-C-Sharp-Projects\Acme_Accounting_Systems\Acme_Accounting_Systems\bin\Debug\Acme_Accounting_Systems.pdb
+C:\Users\Dani\Desktop\Tech-Academy-Basic-C-Sharp-Projects\Acme_Accounting_Systems\Acme_Accounting_Systems\obj\Debug\Acme_Accounting_Systems.csproj.CoreCompileInputs.cache
+C:\Users\Dani\Desktop\Tech-Academy-Basic-C-Sharp-Projects\Acme_Accounting_Systems\Acme_Accounting_Systems\obj\Debug\Acme_Accounting_Systems.exe
+C:\Users\Dani\Desktop\Tech-Academy-Basic-C-Sharp-Projects\Acme_Accounting_Systems\Acme_Accounting_Systems\obj\Debug\Acme_Accounting_Systems.pdb
+C:\Users\Dani\Desktop\Tech-Academy-Basic-C-Sharp-Projects\Acme_Accounting_Systems\Acme_Accounting_Systems\obj\Debug\Acme_Accounting_Systems.csprojAssemblyReference.cache
