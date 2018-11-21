@@ -32,7 +32,22 @@ namespace StringPrograms
             Console.WriteLine("Press [Enter] to continue;");
             Console.ReadLine();
 
+            StringBuilder iWillBuild = new StringBuilder();
+            iWillBuild.Append("So you know who I am, my nationality, and my favorite dish.");
+            Console.WriteLine(iWillBuild);
+            Console.ReadLine();
 
+            iWillBuild.Append("\nBut did you know that my mother is Korean and my father is a Moroccan-Jew born in Jerusalem?");
+            Console.WriteLine(iWillBuild);
+            Console.ReadLine();
+
+            iWillBuild.Append("\nAnd did you know that I met my wife online, even though we had mutual friends, had gone to 3 of the same schools, \nand our parents knew each other?");
+            Console.WriteLine(iWillBuild);
+            Console.ReadLine();
+
+            iWillBuild.Append(" Finally, it's worth mentioning that I am a big blockchain fan.");
+            Console.WriteLine(iWillBuild);
+            Console.ReadLine();
         }
     }
 }
