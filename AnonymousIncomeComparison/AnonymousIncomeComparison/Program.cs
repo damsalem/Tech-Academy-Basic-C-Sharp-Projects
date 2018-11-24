@@ -11,24 +11,24 @@ namespace AnonymousIncomeComparison
             //Person 1
             Console.WriteLine("Person 1");
             Console.WriteLine("Hourly Rate");
-            int p1HourlyRate = 15;
-            Console.WriteLine(p1HourlyRate);
+            string p1Rate = Console.ReadLine();
+            int p1HourlyRate = Convert.ToInt32(p1Rate);
 
             Console.WriteLine("Hours worked per week");
-            int p1WeeklyHours = 40;
-            Console.WriteLine(p1WeeklyHours);
+            string p1Hours = Console.ReadLine();
+            int p1WeeklyHours = Convert.ToInt32(p1Hours);
 
             int p1Salary = p1HourlyRate * p1WeeklyHours;
 
             //Person 2
             Console.WriteLine("Person 2");
             Console.WriteLine("Hourly Rate");
-            int p2HourlyRate = 25;
-            Console.WriteLine(p2HourlyRate);
+            string p2Rate = Console.ReadLine();
+            int p2HourlyRate = Convert.ToInt32(p2Rate);
 
             Console.WriteLine("Hours worked per week");
-            int p2WeeklyHours = 50;
-            Console.WriteLine(p2WeeklyHours);
+            string p2Hours = Console.ReadLine();
+            int p2WeeklyHours = Convert.ToInt32(p2Hours);
 
             int p2Salary = p2HourlyRate * p2WeeklyHours;
 
