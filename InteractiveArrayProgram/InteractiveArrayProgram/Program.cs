@@ -132,8 +132,6 @@ namespace InteractiveArrayProgram
                 }
             } while (!selection);
 
-            Console.WriteLine(aList[k]);
-
         }
     }
 }

@@ -12,7 +12,7 @@ namespace PackageShippingQuote
         {
             Console.WriteLine("Welcome to Package Express. Please follow the instructions below.");
             Console.WriteLine("How much does your package weight?");
-            int packageWeight = Convert.ToInt32(Console.ReadLine());
+            decimal packageWeight = Convert.ToInt32(Console.ReadLine());
 
             if (packageWeight > 50)
             {
@@ -23,26 +23,39 @@ namespace PackageShippingQuote
                 Console.WriteLine("Excellent, what is your package's width?");
             }
 
-            int packageWidth = Convert.ToInt32(Console.ReadLine());
+            decimal packageWidth = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Thank you, and what is your package's height?");
-            int packageHeight = Convert.ToInt32(Console.ReadLine());
+            decimal packageHeight = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Thank you, and finally, what is your package's length?");
-            int packageLength = Convert.ToInt32(Console.ReadLine());
+            decimal packageLength = Convert.ToInt32(Console.ReadLine());
 
-            int totalDimensions = packageWidth + packageHeight + packageLength;
-            if (totalDimensions > 50)
-            {
-                Console.WriteLine("I'm sorry, but your package is too large to be shipped via Package Express. Good luck!");
-            }
+            decimal totalDimensions = packageWidth + packageHeight + packageLength;
 
-            int dimensionsWeight = totalDimensions * packageWeight;
-            int acceptedSize = dimensionsWeight / 100;
+            bool acceptableSize = false;
+
+            decimal dimensionsWeight = totalDimensions * packageWeight;
+            decimal acceptedSize = dimensionsWeight / 100;
             decimal shippingCost = acceptedSize;
 
-            Console.WriteLine("Okay, sour shipping cost is: $" + shippingCost);
-            Console.ReadLine();
+            do
+            {
+                if (totalDimensions > 50)
+                {
+                    Console.WriteLine("I'm sorry, but your package is too large to be shipped via Package Express. Good luck!");
+                    Console.ReadLine();
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Okay, your shipping cost is: $" + shippingCost);
+                    acceptableSize = true;
+                    Console.ReadLine();
+                }
+            } while (!acceptableSize);
+
+            
         }
     }
 }
