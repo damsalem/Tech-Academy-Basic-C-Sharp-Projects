@@ -299,15 +299,32 @@ namespace LoopPrograms
 
 
             /////
-            ///Create a List of strings that has at least two identical strings in the List.
+            ///(11) Create a List of strings that has at least two identical strings in the List.
             ///Create a foreach loop that evaluates each item in the list,
             ///and displays a message showing the string and whether or not it has already appeared in the list.
             /////
             List<string> phones = new List<string>() { "iPhone 8", "iPhone X", "iPhone X", "Galaxy S9", "Galaxy Note9", "Google Pixel 3",};
-            List<string> checkList = new List<string>();
+            Console.WriteLine("The following is a list of phones. One in the list is a duplicate.");
+            phones.ForEach(Console.WriteLine);
+            Console.ReadLine();
 
+            List<string> myList = new List<string>();
+            List<string> duplicates = new List<string>();
 
-
+            foreach (string phone in phones)
+            {
+                if (!myList.Contains(phone))
+                {
+                    myList.Add(phone);
+                }
+                else
+                {
+                    duplicates.Add(phone);
+                }
+            }
+            duplicates.ForEach(Console.WriteLine);
+            Console.ReadLine();
+            
         }
     }
 }
