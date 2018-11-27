@@ -10,72 +10,72 @@ namespace InteractiveArrayProgram
     {
         static void Main(string[] args)
         {
-            /////
-            ///Create a string array
-            /////
-            string[] stringArray = { "0) Avatar", "1) Austin Powers", "2) Officer and a Gentleman", "3) African Queen", "4) Ready Player One" };
+            ///////
+            /////Create a string array
+            ///////
+            //string[] stringArray = { "0) Avatar", "1) Austin Powers", "2) Officer and a Gentleman", "3) African Queen", "4) Ready Player One" };
 
-            //Write text
-            Console.WriteLine("Here is your movie selection:");
-            ///Display entire array
-            stringArray.ToList().ForEach(Console.WriteLine);
+            ////Write text
+            //Console.WriteLine("Here is your movie selection:");
+            /////Display entire array
+            //stringArray.ToList().ForEach(Console.WriteLine);
 
-            //User enters values
-            Console.WriteLine("Please enter a single value between 0-" + (stringArray.Length - 1) + " to display one of those strings.");
-            ///Read entered text and convert to "i"
-            int i = Convert.ToInt32(Console.ReadLine());
+            ////User enters values
+            //Console.WriteLine("Please enter a single value between 0-" + (stringArray.Length - 1) + " to display one of those strings.");
+            /////Read entered text and convert to "i"
+            //int i = Convert.ToInt32(Console.ReadLine());
 
-            bool movieSelection = false;
+            //bool movieSelection = false;
 
-            do
-            {
-                //Limit the values the user can enter
-                if (i <= stringArray.Length - 1)
-                {
-                    Console.WriteLine("You selected: " + stringArray[i] +
-                    "\n Press [Enter] to continue.");
-                    movieSelection = true;
-                    Console.ReadLine();
-                }
-                else
-                {
-                    Console.WriteLine("I'm sorry, you selected " + i + " please enter a value between 0-" + (stringArray.Length - 1));
-                    i = Convert.ToInt32(Console.ReadLine());
-                }
-            } while (!movieSelection);
+            //do
+            //{
+            //    //Limit the values the user can enter
+            //    if (i <= stringArray.Length - 1)
+            //    {
+            //        Console.WriteLine("You selected: " + stringArray[i] +
+            //        "\n Press [Enter] to continue.");
+            //        movieSelection = true;
+            //        Console.ReadLine();
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("I'm sorry, you selected " + i + " please enter a value between 0-" + (stringArray.Length - 1));
+            //        i = Convert.ToInt32(Console.ReadLine());
+            //    }
+            //} while (!movieSelection);
 
 
-            /////
-            ///Create an int array
-            /////
-            float[] numberArray = { 1.2F, 1.41F, 2.54F, 3.14F, 4.67F };
+            ///////
+            /////Create an int array
+            ///////
+            //float[] numberArray = { 1.2F, 1.41F, 2.54F, 3.14F, 4.67F };
 
-            Console.WriteLine("Here is a selection of numbers:");
+            //Console.WriteLine("Here is a selection of numbers:");
 
-            //Display an entire array
-            numberArray.ToList().ForEach(Console.WriteLine);
+            ////Display an entire array
+            //numberArray.ToList().ForEach(Console.WriteLine);
 
-            //User enters values
-            Console.WriteLine("Please enter a single value between 0-" + (numberArray.Length - 1) + " to display one of those numbers.");
-            //Read entered values and convert to "j"
-            int j = Convert.ToInt32(Console.ReadLine());
-            bool numberSelected = false;
+            ////User enters values
+            //Console.WriteLine("Please enter a single value between 0-" + (numberArray.Length - 1) + " to display one of those numbers.");
+            ////Read entered values and convert to "j"
+            //int j = Convert.ToInt32(Console.ReadLine());
+            //bool numberSelected = false;
 
-            do
-            {
-                if (j <= numberArray.Length - 1)
-                {
-                    Console.WriteLine("You selected: " + numberArray[j] + "\nPress [Enter] to continue");
-                    numberSelected = true;
-                    Console.ReadLine();
+            //do
+            //{
+            //    if (j <= numberArray.Length - 1)
+            //    {
+            //        Console.WriteLine("You selected: " + numberArray[j] + "\nPress [Enter] to continue");
+            //        numberSelected = true;
+            //        Console.ReadLine();
 
-                }
-                else
-                {
-                    Console.WriteLine("I'm sorry, you selected " + j + " please enter a value between 0-" + (numberArray.Length - 1));
-                    j = Convert.ToInt32(Console.ReadLine());
-                }
-            } while (!numberSelected);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("I'm sorry, you selected " + j + " please enter a value between 0-" + (numberArray.Length - 1));
+            //        j = Convert.ToInt32(Console.ReadLine());
+            //    }
+            //} while (!numberSelected);
 
             /////
             ///Create a list of strings
@@ -104,7 +104,10 @@ namespace InteractiveArrayProgram
                             //Display their selection, if they accept, tell them it is raining [k]
                             Console.WriteLine("You selected: " + aList[k] + ". Is that your final choice? Enter \"true\" or \"false\".");
                             
-                            finalChoice = bool.Parse(Console.ReadLine());
+                            string userData = Console.ReadLine().ToLower();
+
+                            //multiple choice bool
+                            if (userData == "yeah" || userData == "yep" || userData == "y" || userData == "yes" || userData == "ya") { finalChoice = true; };
 
                             if (!finalChoice)
                             {
