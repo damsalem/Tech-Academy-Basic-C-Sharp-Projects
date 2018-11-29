@@ -11,6 +11,7 @@ namespace TwentyOneGame
         static void Main(string[] args)
         {
             Deck deck = new Deck();
+            deck = Shuffle(deck);
 
             foreach (Card card in deck.Cards)
             {
@@ -23,11 +24,18 @@ namespace TwentyOneGame
 
         public static Deck Shuffle(Deck deck)
         {
-            string userData = Console.ReadLine();
-            bool isTrue = false;
-            if (userData == "yeah" || userData == "yep" || userData == "y") { isTrue = true; };
+            List<Card> TempList = new List<Card>();
+            Random random = new Random();
 
-            return isTrue;
+            while (deck.Cards.Count > 0)
+            {
+                int randomIndex = random.Next(0, deck.Cards.Count);
+                TempList.Add(deck.Cards[randomIndex]);
+                deck.Cards.RemoveAt(randomIndex);
+            }
+
+            deck.Cards = TempList;
+            return deck;
         }
     }
 }
