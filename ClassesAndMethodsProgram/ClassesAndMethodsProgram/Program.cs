@@ -12,7 +12,8 @@ namespace ClassesAndMethodsProgram
         {
             //Addition method
             Console.WriteLine("Enter some number you want to add 10 to:");
-            int x = Int32.Parse(Console.ReadLine());
+            //One way of converting a string to an nit
+            int x = Convert.ToInt32(Console.ReadLine());
 
             SomeMath justMath = new SomeMath();
             int sum = justMath.simpleAddition(x);
@@ -21,6 +22,7 @@ namespace ClassesAndMethodsProgram
 
             //Subtraction method
             Console.WriteLine("Now enter some number you want to subtract 1 from:");
+            //Another way of converting a string to an int
             int y = Int32.Parse(Console.ReadLine());
             
             int difference = justMath.simpleSubtraction(y);
