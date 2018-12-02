@@ -6,44 +6,44 @@ using System.Threading.Tasks;
 
 namespace ClassWithThreeMethodsProgram
 {
+    //This class has 3 methods by the same name. Use "overloading" to deal with that.
     public class Conversion
     {
-        public int simpleMethod(int x)
+        public int simpleMethod(int intAddition)
         {
-            int answer = x + 5;
+            int answer = intAddition + 5;
             return answer;
         }
 
-        public int simpleMethod(decimal x)
+        public int simpleMethod(decimal decMultiplier)
         {
-            decimal product = x * 2;
+            decimal product = decMultiplier * 2;
             int answer = Convert.ToInt32(product);
 
             return answer;
         }
 
-        public int simpleMethod(string x)
+        public int simpleMethod(string stringInt)
         {
-            if (x.Contains("1") 
-                || x.Contains("2") 
-                || x.Contains("3")
-                || x.Contains("4")
-                || x.Contains("5")
-                || x.Contains("6")
-                || x.Contains("7")
-                || x.Contains("8")
-                || x.Contains("9")
-                || x.Contains("0"))
+            if (stringInt.Contains("1") 
+                || stringInt.Contains("2") 
+                || stringInt.Contains("3")
+                || stringInt.Contains("4")
+                || stringInt.Contains("5")
+                || stringInt.Contains("6")
+                || stringInt.Contains("7")
+                || stringInt.Contains("8")
+                || stringInt.Contains("9")
+                || stringInt.Contains("0"))
                 {
-                int stringToNumber = Convert.ToInt32(x);
+                int stringToNumber = Convert.ToInt32(stringInt);
 
                 int answer = stringToNumber * 5;
                 return answer;
                 }
             else
             {
-                int answer = Int32.Parse(x);
-                return answer;
+                return 5;
             }
 
 
