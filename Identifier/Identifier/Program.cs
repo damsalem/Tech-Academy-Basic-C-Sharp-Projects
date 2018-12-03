@@ -38,7 +38,8 @@ namespace Identifier
             //"testClass" = the name of the method within the class
             int result = anyName.testClass(userNum);
 
-            Console.WriteLine("Your number is: " + result);
+            //Insert a variable into a strung using curly brackets and then name the variable
+            Console.WriteLine("You entered: {0}",userNum + " and the answer is: " + result);
             Console.ReadLine();
         }
     }
