@@ -27,5 +27,35 @@ namespace Identifier
         public SampleClass()
         {
         }
+
+        //This creates a method with a string within it
+        //That's cleaner than declaring the list first then inputting the name
+        public void Stuff(List<string> moreStuff)
+        {
+        }
+    }
+
+    //Abstract classes have both abstract methods and virtual methods.
+    public abstract class SlightlyAbstract
+    {
+        //The following are properties
+        public List<string> Guys { get; set; }
+        public string fName { get; set; }
+        public string lName { get; set; }
+        //This was inherited/polymorphed from the other class
+        public AnotherClass stuff { get; set; }
+
+        //Abstract methods cannot be implemented but instead 
+        //MUST have some implementation though inheriting or polymorphism
+        public abstract void Play();
+
+        //Virtual methods are inherited and can be implemented, with the possibility of being overridden.
+        public virtual void ListGuys()
+        {
+            foreach (string guy in Guys)
+            {
+                Console.WriteLine(guy);
+            }
+        }
     }
 }

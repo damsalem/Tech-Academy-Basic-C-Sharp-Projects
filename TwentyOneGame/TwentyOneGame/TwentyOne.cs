@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace TwentyOneGame
 {
+    //TwentyOne is inheriting the properties of the Game class
     public class TwentyOne : Game
     {
-        public void Play()
+        //Implementing the abstract method "play" from the Game class.
+        public override void Play()
         {
             throw new NotImplementedException();
         }
