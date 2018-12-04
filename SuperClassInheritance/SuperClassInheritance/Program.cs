@@ -13,7 +13,7 @@ namespace SuperClassInheritance
             Employee dude = new Employee();
             dude.FirstName = "Sample";
             dude.LastName = "Student";
-            dude.sayname();
+            dude.SayName();
             Console.ReadLine();
         }
     }

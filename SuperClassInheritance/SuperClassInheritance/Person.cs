@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace SuperClassInheritance
 {
-    public class Person
+    public abstract class Person
     {
         //Properties
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public void sayname()
+        public void SayName()
         {
-            Console.WriteLine("Name: " + FirstName + LastName);
         }
     }
 
