@@ -10,23 +10,20 @@ namespace TwentyOneGame
     {
         static void Main(string[] args)
         {
-            //game is a "super class" method because it inherits code from the Game class
-            TwentyOne game = new TwentyOne();
-            game.Players = new List<string>() { "Dani", "Tom", "Dave", "Trevan James" };
-            game.ListPlayers();
-            game.Play();
+            List<Game> games = new  List<Game>();
+            Game game = new TwentyOne();
+            games.Add(game);
+
+            Deck deck = new Deck();
+            deck.Shuffle(3);
+
+            foreach (Card card in deck.Cards)
+            {
+                Console.WriteLine(card.Face + " of " + card.Suit);
+            }
+
+            Console.WriteLine(deck.Cards.Count);
             Console.ReadLine();
-
-            //Deck deck = new Deck();
-            //deck.Shuffle(3);
-
-            //foreach (Card card in deck.Cards)
-            //{
-            //    Console.WriteLine(card.Face + " of " + card.Suit);
-            //}
-
-            //Console.WriteLine(deck.Cards.Count);
-            //Console.ReadLine();
         }
     }
 }
