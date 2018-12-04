@@ -11,6 +11,7 @@ namespace Identifier
     //"SampleClass" = name of the class
     public class SampleClass
     {
+        //"int" is a return type
         //"testClass" = name of the class
         public int testClass(int x)
         {

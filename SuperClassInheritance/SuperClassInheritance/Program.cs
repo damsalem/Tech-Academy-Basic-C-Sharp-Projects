@@ -10,10 +10,15 @@ namespace SuperClassInheritance
     {
         static void Main(string[] args)
         {
-            Employee dude = new Employee();
-            dude.FirstName = "Sample";
-            dude.LastName = "Student";
-            dude.SayName();
+            ////From a previous drill
+            //Employee dude = new Employee();
+            //dude.FirstName = "Sample";
+            //dude.LastName = "Student";
+            //dude.SayName();
+            Console.ReadLine();
+
+            IQuittable stuff = new Employee();
+            stuff.Quit();
             Console.ReadLine();
         }
     }
