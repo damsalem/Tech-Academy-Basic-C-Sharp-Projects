@@ -10,7 +10,7 @@ namespace TwentyOneGame
     public abstract class Game
     {
         //Properties
-        public List<string> Players { get; set; }
+        public List<Player> Players { get; set; }
         public string Name { get; set; }
         public string Dealer { get; set; }
 
@@ -21,7 +21,7 @@ namespace TwentyOneGame
         //Virtual methods are inherited and can be implemented, with the possibility of being overridden.
         public virtual void ListPlayers()
         {
-            foreach (string player in Players)
+            foreach (Player player in Players)
             {
                 Console.WriteLine(player);
             }

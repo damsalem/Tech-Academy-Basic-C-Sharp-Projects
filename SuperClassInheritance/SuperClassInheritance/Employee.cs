@@ -19,5 +19,17 @@ namespace SuperClassInheritance
         {
             Console.WriteLine("I quit");
         }
+
+        public static bool operator== (Employee employee, Employee employee2)
+        {
+            bool sameEmployee = employee.Id == employee2.Id;
+            return sameEmployee;
+        }
+
+        public static bool operator!= (Employee employee, Employee employee2)
+        {
+            bool notEmployee = employee.Id != employee2.Id;
+            return notEmployee;
+        }
     }
 }

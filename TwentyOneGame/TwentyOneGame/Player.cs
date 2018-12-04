@@ -12,5 +12,18 @@ namespace TwentyOneGame
         public int Balance { get; set; }
         public string Name { get; set; }
         public bool isActivelyPlaying { get; set; }
+
+        public static Game operator +(Game game, Player player)
+        {
+            //Players is a list
+            game.Players.Add(player);
+            return game;
+        }
+
+        public static Game operator -(Game game, Player player)
+        {
+            game.Players.Remove(player);
+            return game;
+        }
     }
 }
