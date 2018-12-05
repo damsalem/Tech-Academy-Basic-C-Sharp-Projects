@@ -58,5 +58,21 @@ namespace Identifier
                 Console.WriteLine(guy);
             }
         }
+
+        //enum lets you create your own data type
+        //Here we're defining enum
+        public enum DaysOfTheWeek
+        {
+            Monday,
+            Tuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday,
+            Sunday,
+        }
+        //This calls the DaysOfTheWeek property and uses the Friday value
+        DaysOfTheWeek day = DaysOfTheWeek.Friday;
+
     }
 }
