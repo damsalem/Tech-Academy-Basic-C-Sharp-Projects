@@ -14,6 +14,7 @@ namespace TwentyOneGame
             game.Players = new List<Player>();
             Player player = new Player();
             player.Name = "Dani";
+            game = game + player;
             game += player;
             game -= player;
 
