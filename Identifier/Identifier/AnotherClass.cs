@@ -17,4 +17,11 @@ namespace Identifier
             throw new NotImplementedException();
         }
     }
+
+    //Generic classes don't have specific properties
+    public class Family<T>
+    {
+        //This is a generic list. When creating the Family object, we set the data type for List
+        public List<T> fName { get; set; }
+    }
 }

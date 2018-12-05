@@ -41,6 +41,8 @@ namespace Identifier
             //Insert a variable into a strung using curly brackets and then name the variable
             Console.WriteLine("You entered: {0}",userNum + " and the answer is: " + result);
             Console.ReadLine();
+            
+
         }
     }
 }
