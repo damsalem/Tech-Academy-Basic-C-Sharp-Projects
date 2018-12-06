@@ -42,6 +42,17 @@ namespace Identifier
             Console.WriteLine("You entered: {0}",userNum + " and the answer is: " + result);
             Console.ReadLine();
 
+            //Lambda expressions use the "=>" operator and is read "goes to"
+            //but it makes more sense as "where"
+            //The lambda operator just separates arguments from methods, it doesn't compare
+            List<int> numberList = new List<int>() { 1, 2, 3, 3, 3, 3, 50, 100, 200 };
+            //count numberList.x where x is equal to 3
+            int count = numberList.Count(x => x == 3);
+
+            Console.WriteLine("The total number of 3s in this list are: " + count);
+
+            Console.ReadLine();
+
             
         }
     }
