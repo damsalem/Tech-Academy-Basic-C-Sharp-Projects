@@ -18,10 +18,19 @@ namespace Identifier
         }
     }
 
-    //Generic classes don't have specific properties
+    //Generic classes don't have specific properties and are primarily used in lists.
     public class Family<T>
     {
         //This is a generic list. When creating the Family object, we set the data type for List
         public List<T> fName { get; set; }
+    }
+
+    //Structs = structure and are basically classes
+    //Except structs are value type not reference type, so they're faster
+    //Structs work on number types and bools and more
+    //But they don't work on strings, arrays, and classes.
+    public struct foReal
+    {
+
     }
 }
