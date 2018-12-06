@@ -10,11 +10,16 @@ namespace StructsValuesandReferences
     {
         static void Main(string[] args)
         {
+            //Exercise 137
             Number aValue = new Number();
             aValue.Amount = 6.0m;
 
             Console.WriteLine(aValue.Amount);
             Console.ReadLine();
+
+
+            //Exercise 140 #1
+            List<string>
         }
     }
 }
