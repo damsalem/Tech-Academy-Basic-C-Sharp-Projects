@@ -30,17 +30,13 @@ namespace TwentyOneGame
         public List<Card> Cards { get; set; }
 
         //This is the method
-        public void Shuffle(int times = 1)
+        public void Shuffle(int times = 3)
         {
             for (int i = 0; i < times; i++)
             {
                 List<Card> TempList = new List<Card>();
                 Random random = new Random();
-
-                /////
-                ///Instead of writing deck.Cards, this method was moved within the class
-                ///Then we could write this.Cards or just skip "this" entirely
-                ///
+                
                 while (this.Cards.Count > 0)
                 {
                     int randomIndex = random.Next(0, Cards.Count);

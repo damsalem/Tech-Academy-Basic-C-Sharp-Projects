@@ -95,42 +95,42 @@ namespace LoopPrograms
             //Console.ReadLine();
 
 
-            ///////
-            /////(6) Create a list of strings where each item is unique. 
-            /////Display the list of strings.
-            /////Ask the user to select text to search within the list.
-            /////Create a loop that iterates through the list and displays the index containing the matching text.
-            ///////
-            //List<String> familyNames = new List<string>();
-            //familyNames.Add("david");
-            //familyNames.Add("teri");
-            //familyNames.Add("juliet");
-            //familyNames.Add("megan");
-            //familyNames.Add("kelli");
-            //familyNames.Add("frankie");
+            /////
+            ///(6) Create a list of strings where each item is unique. 
+            ///Display the list of strings.
+            ///Ask the user to select text to search within the list.
+            ///Create a loop that iterates through the list and displays the index containing the matching text.
+            /////
+            List<String> familyNames = new List<string>();
+            familyNames.Add("david");
+            familyNames.Add("teri");
+            familyNames.Add("juliet");
+            familyNames.Add("megan");
+            familyNames.Add("kelli");
+            familyNames.Add("frankie");
 
 
-            ////Display the list of strings
-            //Console.WriteLine("This is the 6th step, a list of names in my family.");
-            //familyNames.ForEach(Console.WriteLine);
+            //Display the list of strings
+            Console.WriteLine("This is the 6th step, a list of names in my family.");
+            familyNames.ForEach(Console.WriteLine);
 
-            ////Ask the user to enter text to search within the list
-            //Console.WriteLine("Please enter a couple of letters of text and hit [Enter] to see if there are any matches.");
-            //string searchText = Console.ReadLine();
+            //Ask the user to enter text to search within the list
+            Console.WriteLine("Please enter a couple of letters of text and hit [Enter] to see if there are any matches.");
+            string searchText = Console.ReadLine();
 
-            //Console.WriteLine("You entered \"" + searchText + "\" and this came up with:");
+            Console.WriteLine("You entered \"" + searchText + "\" and this came up with:");
 
-            ////Create a loop that iterates through the list and displays the index containing the matching text.
-            //foreach (string name in familyNames)
-            //{
-            //    if (name.Contains(searchText))
-            //    {
-            //        Console.WriteLine(name);
-            //        int indexOfValue = familyNames.IndexOf(name);
-            //        Console.WriteLine(indexOfValue);
-            //    }
-            //}
-            //Console.ReadLine();
+            //Create a loop that iterates through the list and displays the index containing the matching text.
+            foreach (string name in familyNames)
+            {
+                if (name.Contains(searchText))
+                {
+                    Console.WriteLine(name);
+                    int indexOfValue = familyNames.IndexOf(name);
+                    Console.WriteLine(indexOfValue);
+                }
+            }
+            Console.ReadLine();
 
 
             ///////
@@ -298,32 +298,32 @@ namespace LoopPrograms
             //Console.ReadLine();
 
 
-            /////
-            ///(11) Create a List of strings that has at least two identical strings in the List.
-            ///Create a foreach loop that evaluates each item in the list,
-            ///and displays a message showing the string and whether or not it has already appeared in the list.
-            /////
-            List<string> phones = new List<string>() { "iPhone 8", "iPhone X", "iPhone X", "Galaxy S9", "Galaxy Note9", "Google Pixel 3",};
-            Console.WriteLine("The following is a list of phones. One in the list is a duplicate.");
-            phones.ForEach(Console.WriteLine);
-            Console.ReadLine();
+            ///////
+            /////(11) Create a List of strings that has at least two identical strings in the List.
+            /////Create a foreach loop that evaluates each item in the list,
+            /////and displays a message showing the string and whether or not it has already appeared in the list.
+            ///////
+            //List<string> phones = new List<string>() { "iPhone 8", "iPhone X", "iPhone X", "Galaxy S9", "Galaxy Note9", "Google Pixel 3",};
+            //Console.WriteLine("The following is a list of phones. One in the list is a duplicate.");
+            //phones.ForEach(Console.WriteLine);
+            //Console.ReadLine();
 
-            List<string> myList = new List<string>();
-            List<string> duplicates = new List<string>();
+            //List<string> myList = new List<string>();
+            //List<string> duplicates = new List<string>();
 
-            foreach (string phone in phones)
-            {
-                if (!myList.Contains(phone))
-                {
-                    myList.Add(phone);
-                }
-                else
-                {
-                    duplicates.Add(phone);
-                }
-            }
-            duplicates.ForEach(Console.WriteLine);
-            Console.ReadLine();
+            //foreach (string phone in phones)
+            //{
+            //    if (!myList.Contains(phone))
+            //    {
+            //        myList.Add(phone);
+            //    }
+            //    else
+            //    {
+            //        duplicates.Add(phone);
+            //    }
+            //}
+            //duplicates.ForEach(Console.WriteLine);
+            //Console.ReadLine();
             
         }
     }
