@@ -1,77 +1,61 @@
-Here is some textSeven of Spades
-
-Two of Diamonds
-
-Four of Diamonds
-
+c5c3ba8b-0104-4b21-a1b8-e615f9e44161
+12/11/2018 12:59:32 PM
 Five of Clubs
 
-Ten of Hearts
+12/11/2018 12:59:32 PM
+Four of Hearts
 
-Five of Hearts
-
-Five of Spades
-
-12/10/2018 9:24:27 PM
-Ten of Diamonds
-
-12/10/2018 9:24:27 PM
-Six of Clubs
-
-12/10/2018 9:24:27 PM
-Two of Diamonds
-
-12/10/2018 9:24:27 PM
-Nine of Diamonds
-
-12/10/2018 9:24:30 PM
-Five of Diamonds
-
-12/10/2018 9:24:32 PM
-Queen of Hearts
-
-12/10/2018 9:24:35 PM
-Ace of Diamonds
-
-12/10/2018 9:24:35 PM
-Seven of Clubs
-
-12/10/2018 9:24:35 PM
-Queen of Spades
-
-12/10/2018 9:24:42 PM
-Four of Clubs
-
-12/10/2018 9:24:42 PM
-Jack of Clubs
-
-12/10/2018 9:24:42 PM
-Two of Clubs
-
-12/10/2018 9:24:42 PM
-Three of Clubs
-
-12/10/2018 9:24:47 PM
-Nine of Hearts
-
-12/10/2018 9:24:49 PM
-Three of Spades
-
-12/10/2018 9:24:51 PM
-Ten of Diamonds
-
-12/10/2018 9:25:06 PM
-Nine of Spades
-
-12/10/2018 9:25:06 PM
+12/11/2018 12:59:32 PM
 Two of Hearts
 
-12/10/2018 9:25:06 PM
-King of Diamonds
-
-12/10/2018 9:25:06 PM
-Six of Clubs
-
-12/10/2018 9:25:12 PM
+12/11/2018 12:59:32 PM
 Ace of Clubs
+
+12/11/2018 12:59:37 PM
+Four of Diamonds
+
+12/11/2018 12:59:40 PM
+Six of Diamonds
+
+12/11/2018 12:59:42 PM
+Three of Hearts
+
+12/11/2018 12:59:52 PM
+King of Clubs
+
+12/11/2018 12:59:52 PM
+King of Hearts
+
+12/11/2018 12:59:52 PM
+Ten of Hearts
+
+12/11/2018 12:59:52 PM
+Four of Spades
+
+12/11/2018 12:59:54 PM
+Ace of Spades
+
+12/11/2018 12:59:54 PM
+Queen of Clubs
+
+12/11/2018 12:59:59 PM
+Nine of Clubs
+
+12/11/2018 12:59:59 PM
+Three of Hearts
+
+12/11/2018 12:59:59 PM
+Two of Diamonds
+
+12/11/2018 12:59:59 PM
+King of Hearts
+
+12/11/2018 1:00:02 PM
+Ten of Spades
+
+12/11/2018 1:00:04 PM
+Three of Spades
+
+12/11/2018 1:00:04 PM
+Two of Hearts
 
