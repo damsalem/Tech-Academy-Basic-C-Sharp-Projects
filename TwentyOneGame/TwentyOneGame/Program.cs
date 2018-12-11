@@ -12,9 +12,9 @@ namespace TwentyOneGame
         {
             Console.WriteLine("Welcome to the Legacy Hotel and Casino. Let's start by you telling me your name.");
             string playerName = Console.ReadLine();
-            Console.WriteLine("And how much money did you bring today?");
+            Console.WriteLine("\nAnd how much money did you bring today?");
             int bank = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Hello, {0}. Would you like to join a game of 21?", playerName);
+            Console.WriteLine("\nHello, {0}. Would you like to join a game of 21?", playerName);
             string answer = Console.ReadLine().ToLower();
             if (answer == "yes" || answer == "ok" || answer == "okay" || answer == "sure" || answer == "yeah" || answer == "y" || answer == "yep" || answer == "yup" || answer == "ya")
             {
@@ -27,7 +27,7 @@ namespace TwentyOneGame
                     game.Play();
                 }
                 game -= player;
-                Console.WriteLine("Thank you for playing {0}.", player.Name);
+                Console.WriteLine("It looks like you're out. Thank you for playing {0}, please come again.", player.Name);
             }
             Console.WriteLine("Feel free to look around the casino. Bye for now!");
             Console.ReadLine();

@@ -37,7 +37,6 @@ namespace TwentyOneGame
 
         public static Game operator +(Game game, Player player)
         {
-            //Players is a list
             game.Players.Add(player);
             return game;
         }
