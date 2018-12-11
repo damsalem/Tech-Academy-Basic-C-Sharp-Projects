@@ -1,0 +1,14 @@
+Here is some textSeven of Spades
+
+Two of Diamonds
+
+Four of Diamonds
+
+Five of Clubs
+
+Ten of Hearts
+
+Five of Hearts
+
+Five of Spades
+
