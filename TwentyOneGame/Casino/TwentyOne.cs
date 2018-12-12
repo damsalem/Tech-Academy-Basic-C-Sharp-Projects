@@ -35,7 +35,7 @@ namespace Casino.TwentyOne
                 }
                 if (bet <= 0)
                 {
-                    throw new FraudException();
+                    throw new FraudException("Security! Remove this person immediately for attempting to defraud this casino!");
                 }
                 bool successfullyBet = player.Bet(bet);
                 if (!successfullyBet)
