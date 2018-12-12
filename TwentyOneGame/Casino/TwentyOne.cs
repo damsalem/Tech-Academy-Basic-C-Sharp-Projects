@@ -22,12 +22,21 @@ namespace Casino.TwentyOne
             Dealer.Stay = false;
             Dealer.Deck = new Deck();
             Dealer.Deck.Shuffle(3);
-            Console.WriteLine("\nYou have a balance of {0}", Players.First().Balance);
-            Console.WriteLine("Please place your bets!");
-            
+            Console.WriteLine("\nThe game is 21 and you have a balance of {0}.", Players.First().Balance);            
             foreach (Player player in Players)
             {
-                int bet = Convert.ToInt32(Console.ReadLine());
+                bool validAnswer = false;
+                int bet = 0;
+                while (!validAnswer)
+                {
+                    Console.WriteLine("Please place your bets!"); 
+                    validAnswer = int.TryParse(Console.ReadLine(), out bet);
+                    if (!validAnswer) { Console.WriteLine("Please enter digits only, no decimals."); }
+                }
+                if (bet <= 0)
+                {
+                    throw new FraudException();
+                }
                 bool successfullyBet = player.Bet(bet);
                 if (!successfullyBet)
                 {
@@ -82,7 +91,7 @@ namespace Casino.TwentyOne
                     }
                     foreach (int handPossibilities in TwentyOneRules.GetAllPossibleHandValues(player.Hand))
                     {
-                        Console.WriteLine("Your hand's value is: {0}", handPossibilities);
+                        Console.WriteLine("\nYour hand's value is: {0}", handPossibilities);
                     }
                     foreach (int handPossibilities in TwentyOneRules.GetAllPossibleHandValues(Dealer.Hand))
                     {
@@ -98,6 +107,10 @@ namespace Casino.TwentyOne
                     else if (answer =="hit")
                     {
                         Dealer.Deal(player.Hand);
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nI didn't understand. Do you want to hit or stay?");
                     }
                     bool busted = TwentyOneRules.isBusted(player.Hand);
                     if (busted)
