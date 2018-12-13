@@ -96,8 +96,7 @@ namespace TwentyOneGame
             Console.WriteLine("Feel free to look around the casino {0}. Bye for now!", playerName);
             Console.ReadLine();
         }
-
-        //How does this exception use polymorphism?
+        
         private static void UpdateDbWithException(Exception ex)
         {
             string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TwentyOneGame;
@@ -114,9 +113,7 @@ namespace TwentyOneGame
                 command.Parameters.Add("@ExceptionType", SqlDbType.VarChar);
                 command.Parameters.Add("@ExceptionMessage", SqlDbType.VarChar);
                 command.Parameters.Add("@TimeStamp", SqlDbType.DateTime);
-
-                //How does this know to pass in the right exception type,
-                // message, and value?
+                
                 command.Parameters["@ExceptionType"].Value = ex.GetType().ToString();
                 command.Parameters["@ExceptionMessage"].Value = ex.Message;
                 command.Parameters["@TimeStamp"].Value = DateTime.Now;
@@ -144,6 +141,7 @@ namespace TwentyOneGame
 
                 connection.Open();
 
+                
                 SqlDataReader reader = command.ExecuteReader();
 
                 while (reader.Read())
