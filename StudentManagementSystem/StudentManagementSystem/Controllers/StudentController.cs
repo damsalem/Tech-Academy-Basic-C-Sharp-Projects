@@ -38,7 +38,6 @@ namespace StudentManagementSystem.Controllers
                 }
                 connection.Close();
             }
-            //This didn't seem to work until I included "students" as an argument, why?
                 return View(students);
         }
 
@@ -55,7 +54,6 @@ namespace StudentManagementSystem.Controllers
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 SqlCommand command = new SqlCommand(queryString, connection);
-                //Why does the sqlDbType error out until I add a Using statement?
                 command.Parameters.Add("@FirstName", SqlDbType.VarChar);
                 command.Parameters.Add("@LastName", SqlDbType.VarChar);
 
@@ -72,15 +70,15 @@ namespace StudentManagementSystem.Controllers
 
         public ActionResult Details(int id)
         {
+
             string queryString = "SELECT * FROM Students WHERE id = @id";
             Student student = new Student();
 
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 SqlCommand command = new SqlCommand(queryString, connection);
-                //What is this doing?
                 command.Parameters.Add("@id", SqlDbType.Int);
-                //And this?
+
                 command.Parameters["@id"].Value = id;
 
                 connection.Open();
