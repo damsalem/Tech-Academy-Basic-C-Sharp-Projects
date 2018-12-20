@@ -1,0 +1,18 @@
+﻿@using CarInsuranceQuote.ViewModel
+@model List<AdminVm>
+
+<h2>
+    Customer Data
+</h2>
+
+@foreach (AdminVm quote in Model)
+{
+    <ul>
+        <p>
+            <li><strong>First Name: </strong>@quote.FirstName</li>
+            <li><strong>Last Name: </strong>@quote.LastName</li>
+            <li><strong>Email: </strong>@quote.Email</li>
+            <li><strong>Quote: </strong>$@quote.Quote</li>
+        </p>
+    </ul>
+}
