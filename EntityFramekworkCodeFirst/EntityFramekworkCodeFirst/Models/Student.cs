@@ -5,6 +5,7 @@ using System.Web;
 
 namespace EntityFramekworkCodeFirst.Models
 {
+    //This object will be a create the database with all its columns
     public class Student
     {
         public int ID { get; set; }
@@ -12,6 +13,8 @@ namespace EntityFramekworkCodeFirst.Models
         public string LastName { get; set; }
         public DateTime EnrollmentDate { get; set; }
 
+        ///This is a navigation property which holds other entities
+        ///Because it is an ICollection, it's basically a list
         public virtual ICollection<Enrollment> Enrollments { get; set; }
     }
 }

@@ -8,6 +8,7 @@ using System.Web;
 
 namespace EntityFramekworkCodeFirst.DAL
 {
+    //This object coordinates the Entity Framework functionality
     public class SchoolContext : DbContext
     {
         public SchoolContext() : base("SchoolContext")
@@ -22,5 +23,7 @@ namespace EntityFramekworkCodeFirst.DAL
         public DbSet<Student> Students { get; set; }
         public DbSet<Enrollment> Enrollments { get; set; }
         public DbSet<Course> Courses { get; set; }
+
+        
     }
 }
