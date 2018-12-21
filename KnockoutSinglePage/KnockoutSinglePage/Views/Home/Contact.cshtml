@@ -1,0 +1,64 @@
+﻿@*===Knockout JS===*@
+<h1>This is a test page for Knockout</h1>
+<h2>Hello <span data-bind="text: fullName"></span></h2>
+
+<p><strong>Please enter your name in the form below to adjust the title.</strong></p>
+<p>First Name: <input data-bind="value: firstName" /></p>
+<p>Last Name: <input data-bind="value: lastName" /></p>
+@*===Knockout JS===*@
+
+@*Vanilla JS*@
+<button onclick="showText()">Next Step</button>
+@*Knockout JS*@
+<button data-bind="click: $parent.hideText">Try this</button>
+<br />
+<br />
+<p id="showMessage"></p>
+@*This variable "myMessage" should = "test Hey that worked!"*@
+@*You can see that the console log displays it correctly*@
+@*But the displayText function doesn't seem to update this variable*@
+<p><strong data-bind="visible: show, text: fullName" id="coco"></strong></p>
+
+@section Scripts {
+    <script type="text/javascript">
+        //Knockout JS
+        function ViewModel() {
+            //Data
+            var self = this;
+            self.firstName = ko.observable("Person")
+            self.lastName = ko.observable("")
+            self.myMessage = "test";
+
+            self.fullName = ko.computed(function () {
+                return self.firstName() + " " + self.lastName();
+            }, self);
+            //Behaviors
+            //self.displayText = function() {
+            //    var previousValue = self.myMessage;   //Read current value
+            //    self.myMessage = (previousValue + " Hey that worked!");  //Write a modified value
+            //    console.log(self.myMessage);
+            //    return self.myMessage;
+            //};
+            var leo = true;
+            show = ko.observable(leo); //Param
+            console.log('value the coco = ' + leo + " ");
+
+            self.hideText = function (leo) {
+                leo = !leo;
+                return leo;
+                console.log("'show' value = " + leo);
+                //var currentShow = this.show();
+                //this.show(!currentShow);
+            }
+
+        };
+        var ViewModel = new ViewModel();
+        ko.applyBindings(ViewModel);
+
+        //Vanilla JS
+        function showText() {
+            document.getElementById("showMessage").innerHTML = "Well done!";
+        }
+
+    </script>
+}

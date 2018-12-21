@@ -1,0 +1,39 @@
+﻿@*===Knockout JS===*@
+<h1>This page works</h1>
+<h2>Hello <span data-bind="text: fullName"></span></h2>
+
+<p><strong>Please enter your name in the form below to adjust the title.</strong></p>
+<p>First Name: <input data-bind="value: firstName" /></p>
+<p>Last Name: <input data-bind="value: lastName" /></p>
+@*===Knockout JS===*@
+
+@*Vanilla JS*@
+<button onclick="showText()">Here are my thoughts...</button>
+<br />
+<br />
+<p id="showMessage"></p>
+
+@section Scripts {
+    <script type="text/javascript">
+        //Knockout JS
+        function ViewModel() {
+            //Data
+            var self = this;
+            self.firstName = ko.observable("Person")
+            self.lastName = ko.observable("")
+
+            self.fullName = ko.computed(function () {
+                return self.firstName() + " " + self.lastName();
+            }, self);
+
+        };
+        var ViewModel = new ViewModel();
+        ko.applyBindings(ViewModel);
+
+        //Vanilla JS
+        function showText() {
+            document.getElementById("showMessage").innerHTML = "Well done!";
+        }
+
+    </script>
+}
